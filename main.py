@@ -99,7 +99,7 @@ async def get_dogs_pk(pk: int):
 
 
 # 7. Реализовано получение собак по типу – 1 балл
-@app.get('/dog_kind/{i}', response_model=list[Dog], summary='Get Dog By Kind')
+@app.get('/dog_kind/{i}', summary='Get Dog By Kind')
 async def get_dogs_kind(i: str):
     list_kind_dog = []
     if i in dog_list:
